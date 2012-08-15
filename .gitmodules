@@ -10,3 +10,6 @@
 [submodule "cookbooks/build-essential"]
 	path = cookbooks/build-essential
 	url = https://github.com/opscode-cookbooks/build-essential.git
+[submodule "cookbooks/geodjango"]
+	path = cookbooks/geodjango
+	url = git@github.com:niran/chef-geodjango.git
