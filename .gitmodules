@@ -1,0 +1,3 @@
+[submodule "postgresql"]
+	path = cookbooks/postgresql
+	url = https://github.com/opscode-cookbooks/postgresql.git
