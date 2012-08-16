@@ -1,0 +1,4 @@
+vagrant-geodjango-db
+====================
+
+`vagrant-geodjango-db` consists of a Vagrantfile and Chef cookbooks that launch a PostgreSQL server with the GeoDjango requirements installed and configured.
