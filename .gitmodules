@@ -13,3 +13,6 @@
 [submodule "cookbooks/geodjango"]
 	path = cookbooks/geodjango
 	url = git@github.com:niran/chef-geodjango.git
+[submodule "cookbooks/localwiki"]
+	path = cookbooks/localwiki
+	url = git@github.com:niran/chef-localwiki.git

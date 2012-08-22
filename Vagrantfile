@@ -4,7 +4,7 @@ Vagrant::Config.run do |config|
     vm_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = "cookbooks"
       chef.add_recipe("apt")
-      chef.add_recipe("geodjango")
+      chef.add_recipe("localwiki")
     end
   end
 
@@ -13,7 +13,7 @@ Vagrant::Config.run do |config|
     vm_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = "cookbooks"
       chef.add_recipe("apt")
-      chef.add_recipe("geodjango")
+      chef.add_recipe("localwiki")
     end
   end
 end
