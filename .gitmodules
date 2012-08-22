@@ -16,3 +16,6 @@
 [submodule "cookbooks/localwiki"]
 	path = cookbooks/localwiki
 	url = git@github.com:niran/chef-localwiki.git
+[submodule "cookbooks/python"]
+	path = cookbooks/python
+	url = https://github.com/opscode-cookbooks/python.git
