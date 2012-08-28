@@ -8,9 +8,9 @@ Usage
 
 1. [Install Vagrant.](http://vagrantup.com/v1/docs/getting-started/index.html)
 2. Add a 64-bit Ubuntu 12.04 box: `vagrant box add precise64 http://files.vagrantup.com/precise64.box`
-3. Create and enter a directory that will contain your localwiki work, e.g. `~/localwiki-project/`
+3. Create and enter a directory that will contain your LocalWiki work, e.g. `~/localwiki-project/`
 4. Clone this repository.
-5. Clone the localwiki repository alongside this repository.
-6. Create an empty localwiki_data folder, which be mounted at `/usr/share/localwiki` to store localwiki's data files.
+5. Clone the LocalWiki repository alongside this repository.
+6. Create an empty localwiki_data folder, which be mounted at `/usr/share/localwiki` to store LocalWiki's data files.
 7. Run `vagrant up`.
-8. Run `vagrant ssh` to access the machine. Your localwiki repository is mounted at `/srv/localwiki/. By default, a Django superuser named `admin` is created with the password `admin`.
+8. Run `vagrant ssh` to access the machine. Your LocalWiki repository is mounted at `/srv/localwiki/. The LocalWiki virtualenv is activated at login. By default, a Django superuser named `admin` is created with the password `admin`.
