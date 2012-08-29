@@ -1,21 +1,21 @@
 [submodule "cookbooks/postgresql"]
 	path = cookbooks/postgresql
-	url = https://github.com/opscode-cookbooks/postgresql.git
+	url = git://github.com/opscode-cookbooks/postgresql.git
 [submodule "cookbooks/openssl"]
 	path = cookbooks/openssl
-	url = https://github.com/opscode-cookbooks/openssl.git
+	url = git://github.com/opscode-cookbooks/openssl.git
 [submodule "cookbooks/apt"]
 	path = cookbooks/apt
-	url = https://github.com/opscode-cookbooks/apt.git
+	url = git://github.com/opscode-cookbooks/apt.git
 [submodule "cookbooks/build-essential"]
 	path = cookbooks/build-essential
-	url = https://github.com/opscode-cookbooks/build-essential.git
+	url = git://github.com/opscode-cookbooks/build-essential.git
 [submodule "cookbooks/geodjango"]
 	path = cookbooks/geodjango
-	url = git@github.com:niran/chef-geodjango.git
+	url = git://github.com/niran/chef-geodjango.git
 [submodule "cookbooks/localwiki"]
 	path = cookbooks/localwiki
-	url = git@github.com:niran/chef-localwiki.git
+	url = git://github.com/niran/chef-localwiki.git
 [submodule "cookbooks/python"]
 	path = cookbooks/python
-	url = https://github.com/opscode-cookbooks/python.git
+	url = git://github.com/opscode-cookbooks/python.git
