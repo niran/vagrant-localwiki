@@ -19,3 +19,6 @@
 [submodule "cookbooks/python"]
 	path = cookbooks/python
 	url = git://github.com/opscode-cookbooks/python.git
+[submodule "ec2"]
+	path = ec2
+	url = git://github.com/niran/vagrant-ec2.git
