@@ -4,7 +4,10 @@
   "json_class": "Chef::Role",
   "description": "Vagrant servers that run the LocalWiki application code and database",
   "run_list": [
-    "role[localwiki_monolithic]",
-    "recipe[localwiki::develop]"
+    "recipe[apt]",
+    "recipe[localwiki]",
+    "recipe[localwiki::develop]",
+    "recipe[localwiki::init_data]",
+    "recipe[localwiki::database]"
   ]
 }
