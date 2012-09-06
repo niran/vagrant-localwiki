@@ -1,0 +1,10 @@
+{
+  "name": "localwiki_monolithic",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Servers that run the LocalWiki application code and database",
+  "run_list": [
+    "role[localwiki_appserver]",
+    "recipe[localwiki::database]"
+  ]
+}

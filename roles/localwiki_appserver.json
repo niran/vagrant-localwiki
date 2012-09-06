@@ -1,0 +1,11 @@
+{
+  "name": "localwiki_appserver",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Servers that run the LocalWiki application code.",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[localwiki]",
+    "recipe[localwiki::init_data]"
+  ]
+}

@@ -7,11 +7,8 @@ Vagrant::Config.run do |config|
     vm_config.vm.provision :chef_solo do |chef|
       chef.log_level = :debug
       chef.cookbooks_path = "cookbooks"
-      chef.add_recipe("apt")
-      chef.add_recipe("localwiki")
-      chef.add_recipe("localwiki::develop")
-      chef.add_recipe("localwiki::init_data")
-      chef.add_recipe("localwiki::database")
+      chef.roles_path = "roles"
+      chef.add_role("localwiki_monolithic_vagrant")
     end
   end
 end

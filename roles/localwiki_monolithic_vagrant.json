@@ -1,0 +1,10 @@
+{
+  "name": "localwiki_monolithic_vagrant",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "Vagrant servers that run the LocalWiki application code and database",
+  "run_list": [
+    "role[localwiki_monolithic]",
+    "recipe[localwiki::develop]"
+  ]
+}
