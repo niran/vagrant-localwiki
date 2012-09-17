@@ -6,6 +6,8 @@
   "run_list": [
     "recipe[apt]",
     "recipe[localwiki]",
+    "recipe[localwiki::load_code]",
+    "recipe[localwiki::develop]",
     "recipe[localwiki::init_data]"
   ]
 }

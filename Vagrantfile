@@ -9,6 +9,13 @@ Vagrant::Config.run do |config|
       chef.cookbooks_path = "cookbooks"
       chef.roles_path = "roles"
       chef.add_role("localwiki_monolithic_vagrant")
+
+      # vagrant-ec2 support
+      require 'json'
+      open('ec2-dna.json', 'w') do |f|
+        chef.json[:run_list] = ["role[localwiki_monolithic]"]
+        f.write chef.json.to_json
+      end
     end
   end
 end
