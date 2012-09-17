@@ -16,6 +16,13 @@ Usage
 8. Run `vagrant ssh` to access the machine. Your LocalWiki repository is mounted at `/srv/localwiki/`. The LocalWiki virtualenv is activated at login. By default, a Django superuser named `admin` is created with the password `admin`.
 9. Go to `/srv/localwiki/sapling/` and run `python manage.py init_settings` to initialize your secret key and enter your CloudMade API key.
 
+EC2 Support
+-----------
+
+The README in the `ec2/` folder explains how to launch your configuration on an EC2 server. Here's an example command to launch a server:
+
+    ec2-run-instances ami-a29943cb --instance-type m1.small --key aws-keypair1 --user-data-file ec2/bootstrap.sh -g web -g default
+
 License
 -------
 
