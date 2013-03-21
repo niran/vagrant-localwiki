@@ -10,11 +10,13 @@ Usage
 2. Add a 64-bit Ubuntu 12.04 box: `vagrant box add precise64 http://files.vagrantup.com/precise64.box`
 3. Create and enter a directory that will contain your LocalWiki work, e.g. `~/localwiki-project/`
 4. Clone this repository.
-5. Clone the LocalWiki repository alongside this repository.
-6. Create an empty localwiki_data folder, which be mounted at `/usr/share/localwiki` to store LocalWiki's data files.
-7. Run `vagrant up`.
-8. Run `vagrant ssh` to access the machine. Your LocalWiki repository is mounted at `/srv/localwiki/`. The LocalWiki virtualenv is activated at login. By default, a Django superuser named `admin` is created with the password `admin`.
-9. Go to `/srv/localwiki/sapling/` and run `python manage.py init_settings` to initialize your secret key and enter your CloudMade API key.
+5. Clone [the LocalWiki repository](https://github.com/localwiki/localwiki) alongside this repository.
+6. Create an empty localwiki_data folder (it will be mounted at `/usr/share/localwiki` to store LocalWiki's data files.)
+7. `cd vagrant-localwiki`
+8. `git submodule update --init`
+8. `vagrant up`.
+9. `vagrant ssh` to access the machine. Your LocalWiki repository is mounted at `/srv/localwiki/`. The LocalWiki virtualenv is activated at login. By default, a Django superuser named `admin` is created with the password `admin`.
+10. Go to `/srv/localwiki/sapling/` and run `python manage.py init_settings` to initialize your secret key and enter your CloudMade API key.
 
 EC2 Support
 -----------
